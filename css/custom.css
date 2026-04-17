@@ -1,21 +1,22 @@
 html {
+  color-scheme: light dark;
   /* Background color */
-  --color-bg: #cfceca;
+  --color-bg: light-dark(#e3d29f, #44351a);
 
   /* Header background color */
-  --color-head-bg: #625e5c;
+  --color-head-bg: light-dark(#63bc94, #033922);
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
+  --color-logotype-bg: light-dark(#81ceab, #052a1a);
+  --color-text-logotype: ;
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: light-dark(#63bc94, #084027);
   /* Links */
-  --color-link-bg: #78766e;
-  --color-link-hover: #fff;
-  --color-link-active: #99958f;
+  --color-link-bg: light-dark(#4ad76f, #215d31);
+  --color-link-hover: light-dark(#a3efa5, #0d3518);
+  --color-link-active: light-dark(#2d9b4b, #052a1a);
   --border-radius-links: 1px;
 
   /* Headlines (size)*/
@@ -28,11 +29,13 @@ html {
   --font-sub1-size: 1rem;
 
   /* Headlines (color) */
-  --color-headline-bg: #4b4545;
+  --color-headline-bg: light-dark(#5587c8e2, #0c305ed4);
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text: light-dark(#362727, #bfa766);
+  --color-text-inverted: light-dark(#005712, #15902e);
+  --input-color: light-dark(#fff, #846331);
+  --input-text-color: light-dark(#000, #f0d277);
 
   /* Andet tekst */
   --followup-text-size: 1rem;
@@ -44,10 +47,10 @@ html {
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #e3e1d8;
-  --color-card-bg-inverted: #4d4e4f;
-  --color-cta-card-bg: #847f7e;
-  --color-cta-card-bg-inverted: #c0bfb9;
+  --color-card-bg: light-dark(#f5b027c9, #66480bc9);
+  --color-card-bg-inverted: light-dark(#1eb23ca0, #0b581aa0);
+  --color-cta-card-bg: #7e847f;
+  --color-cta-card-bg-inverted: #b9c0bb;
 
   /* Fonts & font weights*/
   --font-family-sans: ui-sans-serif;
@@ -57,5 +60,74 @@ html {
   --font-weight-light: 200;
 
   /* Infographics background colors*/
-  --color-info-bg: #676161;
+  --color-info-bg: light-dark(#ebdcb4, #584c29);
+
+  /* Checkliste */
+  label:has(input) {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  label {
+    display: block;
+  }
+
+  /* Vandmærke */
+  .watermark {
+    position: absolute;
+    bottom: 80px;
+    right: 1px;
+    width: 400px;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  /* form {
+    display: block;
+    gap: 10rem;
+  }
+
+  /* Animations */
+  /* .info-text {
+    visibility: hidden;
+  }
+
+  .fadeIn {
+    animation: fadeIn_kf 0.4s;
+  }
+  @keyframes fadeIn_kf {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }  */
+  [popover] {
+    padding: 1rem;
+    max-height: 40rem;
+    max-width: 100ch;
+    width: 50rem;
+    margin: auto;
+  }
+  [popover] img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  [popover] button {
+    position: sticky;
+    top: 0;
+    justify-self: end;
+  }
+  :popover-open {
+    display: grid;
+  }
+  ::backdrop {
+    background: #0001;
+    backdrop-filter: blur(4px);
+  }
+}
+html.dark {
+  color-scheme: dark;
 }

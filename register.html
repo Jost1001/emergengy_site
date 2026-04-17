@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/forms.css">
   <link rel="icon" type="image/png" href="img/fav.png">
   <title>Emergency Site</title>
 </head>
@@ -19,11 +19,14 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> <img src="imgs/gaeko_logotype.webp" alt="gæko"> <img src="imgs/gaeko_slogan2.webp"
+            alt="slogan">
+        </a>
       </div>
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <button id="toggle-btn">Dark</button>
+        <li><a class="menuItem" href="instruction.html">Information</a></li>
+        <li><a class="menuItem" href="register.html">Dan overblik</a></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
@@ -34,20 +37,116 @@
   </header>
 
   <main>
-    <h1>INDBERET</h1>
+    <h1>TJEKLISTE</h1>
     <section id="form-section">
       <article id="form-info">
-        <h2>Overskrift</h2>
-        <p>Tekst</p>
+        <h2>Tjekliste til dit selskab</h2>
+        <p>Herunder kan du tjekke af på vores liste af ting der, som forholdsregel, ville være gode at have styr på.</p>
+        <p>Det kan være med til at hjælpe dig med at danne et overblik.</p>
+        <p>Listen er ikke et krav til et godt selskab eller fest, men skal ses som en hjælp, til hvis nu panikken skulle
+          melde
+          sig.</p>
       </article>
-      <form id="webform"></form>
+      <form id="webform">
+        <fieldset>
+          <legend>
+            <h3>Giv dit selskab en titel:</h3>
+          </legend>
+          <label for="navn">
+          </label>
+          <input type="text" name="fest" id="navn">
+
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h3>Er det din første gang som vært?</h3>
+
+          </legend>
+          <label for="radio_yes"></label>
+          <input type="radio" value="first" name="valg" id="radio_yes">Ja
+          <label for="radio_no"></label>
+          <input type="radio" value="not" name="valg" id="radio">Nej
+
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h3>Hvornår er dit selskab?</h3>
+          </legend>
+          <label for="dato"></label>
+          <input type="date" name="dato" id="dato">
+
+        </fieldset>
+
+
+        <fieldset>
+          <legend>
+            <h4>Checkliste</h4>
+          </legend>
+          <label for="siddepladser">
+            <input name="check" id="siddepladser" value="yes" type="checkbox">
+            Siddepladser (nok til alle)
+          </label>
+          <p></p>
+
+          <!-- <label for="service">
+          <input name="check" id="service" value="yes" type="checkbox">
+          Service:
+        </label>
+        <p></p> -->
+
+          <label for="tallerkener">
+            <input name="check" id="tallerkener" value="yes" type="checkbox">
+            Tallerkener
+          </label>
+          <p></p>
+
+          <label for="bestik">
+            <input name="check" id="bestik" value="yes" type="checkbox">
+            Bestik
+          </label>
+          <p></p>
+
+          <label for="glas">
+            <input name="check" id="glas" value="yes" type="checkbox">
+            Glas
+          </label>
+          <p></p>
+
+          <label for="drikkevarer">
+            <input name="check" id="drikkevarer" value="yes" type="checkbox">
+            Drikkevarer:
+            <input type="text">
+          </label>
+          <p></p>
+
+          <label for="mad">
+            <input name="check" id="mad" value="yes" type="checkbox">
+            Mad:
+            <input type="text" name="mad" id="mad">
+          </label>
+          <p></p>
+
+        </fieldset>
+        <button>Dan overblik</button>
+
+      </form>
     </section>
     <section id="form-summary">
-      <h2>Summary</h2>
+      <h2>Overblik</h2>
+      <p>Du har en idé om følgende:</p>
       <article>
-        <p class="placeholder">Opsummering</p>
+        <p class="placeholder">Titel:</p>
+        <p class="placeholder">Du har prøvet det før:</p>
+        <p class="placeholder">Dato</p>
+        <p class="placeholder">Du har styr på:</p>
+
       </article>
+
     </section>
+    <img src="imgs/gecko_watermark.svg" class="watermark" alt="vandmærke">
+
   </main>
   <footer>
     <nav>
@@ -71,6 +170,7 @@
       </ul>
     </nav>
   </footer>
+  <script src="js/darkmode.js"></script>
 </body>
 
 </html>
