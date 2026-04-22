@@ -132,14 +132,9 @@ html {
     color: var(--color-text);
   }
 
-  /* form {
-    display: block;
-    gap: 10rem;
-  }
-
   /* Animations */
 
-  #Skammel path,
+  /* #Skammel path,
   #Skammel rect,
   #Skammel polyline {
     animation: skammel 2s ease-out both;
@@ -154,7 +149,7 @@ html {
       transform: translate(150px, 0);
     }
   }
-  /* 
+
   #Pude_til_stol path,
   #Stol path,
   #Stol rect {
