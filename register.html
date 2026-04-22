@@ -64,9 +64,9 @@
 
           </legend>
           <label for="radio_yes"></label>
-          <input type="radio" value="first" name="valg" id="radio_yes">Ja
+          <input type="radio" value="Nej" name="valg" id="radio_yes">Ja
           <label for="radio_no"></label>
-          <input type="radio" value="not" name="valg" id="radio">Nej
+          <input type="radio" value="Ja" name="valg" id="radio">Nej
 
         </fieldset>
 
@@ -85,7 +85,7 @@
             <h4>Checkliste</h4>
           </legend>
           <label for="siddepladser">
-            <input name="check" id="siddepladser" value="yes" type="checkbox">
+            <input name="check" id="siddepladser" value="Siddepladser" type="checkbox">
             Siddepladser (nok til alle)
           </label>
           <p></p>
@@ -97,51 +97,50 @@
         <p></p> -->
 
           <label for="tallerkener">
-            <input name="check" id="tallerkener" value="yes" type="checkbox">
+            <input name="check" id="tallerkener" value="Tallerkener" type="checkbox">
             Tallerkener
           </label>
           <p></p>
 
           <label for="bestik">
-            <input name="check" id="bestik" value="yes" type="checkbox">
+            <input name="check" id="bestik" value="Bestik" type="checkbox">
             Bestik
           </label>
           <p></p>
 
           <label for="glas">
-            <input name="check" id="glas" value="yes" type="checkbox">
+            <input name="check" id="glas" value="Glas" type="checkbox">
             Glas
           </label>
           <p></p>
 
           <label for="drikkevarer">
-            <input name="check" id="drikkevarer" value="yes" type="checkbox">
-            Drikkevarer:
-            <input type="text">
+            <input name="check" id="drikkevarer" value="Drikkevarer" type="checkbox">
+            Drikkevarer
+            <!-- <input type="text" id="drikkevarer"> -->
           </label>
           <p></p>
 
           <label for="mad">
-            <input name="check" id="mad" value="yes" type="checkbox">
-            Mad:
-            <input type="text" name="mad" id="mad">
+            <input name="check" id="mad" value="Mad" type="checkbox">
+            Mad
+            <!-- <input type="text" name="mad" id="mad"> -->
           </label>
           <p></p>
 
         </fieldset>
-        <button>Dan overblik</button>
+        <button class="submit">Dan overblik</button>
 
       </form>
     </section>
     <section id="form-summary">
       <h2>Overblik</h2>
-      <p>Du har en idé om følgende:</p>
       <article>
-        <p class="placeholder">Titel:</p>
-        <p class="placeholder">Du har prøvet det før:</p>
-        <p class="placeholder">Dato</p>
-        <p class="placeholder">Du har styr på:</p>
-
+        <p><b>Titel:</b> <span id="navn_output"></span></p>
+        <p><b>Du har prøvet det før:</b> <span id="radio_output"></span></p>
+        <p><b>Dato:</b> <span id="dato_output"></span></p>
+        <p><b>Du har styr på:</b> <span id=""></span></p>
+        <p id="check_output"></p>
       </article>
 
     </section>
@@ -171,6 +170,10 @@
     </nav>
   </footer>
   <script src="js/darkmode.js"></script>
+  <script src="js/burger.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/svg.js"></script>
+
 </body>
 
 </html>

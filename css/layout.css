@@ -68,6 +68,7 @@ footer ul {
   grid-column: -1/1;
   display: grid;
   grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
+  border-radius: 0%;
 }
 #frontpage .bred > * {
   grid-column: 2/3;
@@ -75,13 +76,81 @@ footer ul {
 .grid_1-2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  line-height: 0.6cm;
 }
 .grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+/* animations */
+.bred2 article {
+  animation: effekt ease-out both;
+  animation-timeline: scroll();
+}
 
+@keyframes effekt {
+  from {
+    scale: 0.8;
+    translate: 0 40vw;
+  }
+}
+.bred2 article:first-child {
+  /* rotate: -5deg; */
+  animation: venstre ease-out both;
+  animation-timeline: scroll();
+}
+@keyframes venstre {
+  from {
+    scale: 0.8;
+    translate: 0 20vw;
+  }
+}
+.bred2 article:last-child {
+  /* rotate: 5deg; */
+  animation: højre ease-out both;
+  animation-timeline: scroll();
+}
+@keyframes højre {
+  from {
+    scale: 0.8;
+    translate: 0 80vw;
+  }
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.underrubrik {
+  padding-bottom: 1rem;
+}
+.grid_1-1 p {
+  margin-bottom: 1rem;
+}
+#frontpage .bred2 {
+  background-color: light-dark(#63bc94, #033922);
+  grid-column: -1/1;
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
+}
+#frontpage .bred2 > * {
+  grid-column: 2/3;
+}
+#frontpage .overskrift {
+  background-color: light-dark(#d5a129, #684b07);
+  padding-block: 9px;
+}
+.news {
+  background-color: light-dark(#d5a129, #684b07);
+}
+.forside {
+  padding-bottom: 1%;
+}
+footer a {
+  color: transparent;
+}
 @media (width > 600px) {
   #instruction > main,
   #register > main {

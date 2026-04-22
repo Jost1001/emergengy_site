@@ -61,10 +61,3 @@ function click3() {
   document.querySelector("#requirement").textContent =
     "Pynt: Når du planlægger pynt til rum og bord, bør du overveje, om det skal passe til maden eller følge et bestemt tema.Et gennemført tema kan skabe en rød tråd, men kræver mere planlægning.Du kan hente inspiration fra årstid eller højtid for at gøre det stemningsfuldt og relevant.Alternativt kan du holde det enkelt og lade pynten understøtte helheden uden at fylde for meget. Og måske skal der slet ikke være noget pynt.";
 }
-
-// // Info-box
-// document.querySelector("#Hotspot1").addEventListener("click", fadeIn);
-// function fadeIn() {
-//   document.querySelector("#info-text").classList.remove("info-text");
-//   document.querySelector("#info-text").classList.add("fadeIn");
-// }

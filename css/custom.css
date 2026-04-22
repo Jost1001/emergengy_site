@@ -81,6 +81,56 @@ html {
     opacity: 0.2;
     pointer-events: none;
   }
+  .news1,
+  .news3 {
+    background-color: light-dark(#e7c570, #22572f);
+    border-radius: 4%;
+    box-shadow: 1px 1px 5px light-dark(#0f3f29, #000905);
+    padding: 10px;
+  }
+  .news1 p,
+  .news2 p,
+  .news3 p {
+    margin-block: 10px;
+  }
+  .news2 {
+    background-color: light-dark(#ead08f, #22572f);
+    border-radius: 4%;
+    box-shadow: 1px 1px 5px light-dark(#0f3f29, #000905);
+    padding: 10px;
+  }
+  .section {
+    border: #000 solid 1px;
+    padding-bottom: 1rem;
+  }
+  .linket {
+    text-decoration: none;
+    border-radius: 2px;
+    background-color: light-dark(#4ad76f, #215d31);
+    color: light-dark(#362727, #bfa766);
+    border: #000 1px solid;
+    box-shadow: 1px 1px 1px black;
+    padding: 3px;
+  }
+  .linket:hover {
+    background-color: light-dark(#35f568, #007e22);
+  }
+  .article_btn {
+    background-color: light-dark(#d49b2a, #043606);
+    border: black 1px solid;
+    box-shadow: 1px 1px 1px black;
+    color: light-dark (black, white);
+    padding: 3px;
+  }
+  .article_btn:hover {
+    background-color: light-dark(#ffba30, #3ba03e);
+  }
+  #burnt_dinner,
+  #help_host,
+  #power_fail {
+    background-color: light-dark(#f0eded, #272d29);
+    color: var(--color-text);
+  }
 
   /* form {
     display: block;
@@ -88,12 +138,10 @@ html {
   }
 
   /* Animations */
-  /* .info-text {
-    visibility: hidden;
-  }
 
-  .fadeIn {
-    animation: fadeIn_kf 0.4s;
+  /* .info-text {
+    animation: fadeIn_kf 3s ease-out forwards;
+    opacity: 0;
   }
   @keyframes fadeIn_kf {
     from {
@@ -102,7 +150,40 @@ html {
     to {
       opacity: 1;
     }
-  }  */
+  } */
+
+  #Skammel path,
+  #Skammel rect,
+  #Skammel polyline {
+    animation: skammel 2s ease-out both;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  @keyframes skammel {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(150px, 0);
+    }
+  }
+  /* 
+  #Pude_til_stol path,
+  #Stol path,
+  #Stol rect {
+    animation: stol 2s ease-out both;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  @keyframes stol {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(50px, 0);
+    }
+  } */
+
   [popover] {
     padding: 1rem;
     max-height: 40rem;
@@ -119,6 +200,10 @@ html {
     position: sticky;
     top: 0;
     justify-self: end;
+    background-color: light-dark(#d49b2a, #367438);
+    color: light-dark(#362727, #bfa766);
+    border-color: #bfa766;
+    padding: 2px;
   }
   :popover-open {
     display: grid;

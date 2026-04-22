@@ -37,7 +37,7 @@
 
   <main>
     <h1>INSTRUKTION</h1>
-    <p>Underoverskrift</p>
+    <p>Infografik</p>
     <section class="info-graphic">
       <?xml version="1.0" encoding="UTF-8"?>
       <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="1048.2" height="931.79"
@@ -72,7 +72,7 @@
             d="M615.68,418.1c-49.14.87-65.44,3.51-119-.58.02-2.92-.1-5.79.1-8.71,40.79,0,77.58.78,119.01.32.27,3.01.03,5.97-.11,8.97Z"
             style="fill: #351104; stroke: #2a1000; stroke-miterlimit: 10;" />
         </g>
-        <g id="Skammel">
+        <g class="skammel" id="Skammel">
           <rect x="716.31" y="516.05" width="211.82" height="33.55" rx="12" ry="12"
             style="fill: #296a00; stroke: #003f19; stroke-miterlimit: 10;" />
           <path
@@ -87,12 +87,12 @@
           <polyline points="885 644.97 885 622.92 877.09 622.92"
             style="fill: #351104; stroke: #2a1000; stroke-miterlimit: 10;" />
         </g>
-        <g id="Pude_til_stol" data-name="Pude til stol">
+        <g class="stol" id="Pude_til_stol" data-name="Pude til stol">
           <path
             d="M367.71,511.05c-1.09-6.39-1.4-10.5-9.8-12.34-55.77-12.22-108.19-11.85-163.85-6.75-19.42-28.34,22.52-183.06-34.56-250.75-5.91-7.01-8.85-7.09-14.82-1.54-2.5,2.32-1.66,4-1.68,8.55-.05,10.88-1.99,1,2.1,15.89,40.8,148.43-23.91,174.62,17.09,245.09,3.57,6.14,8.63,6.53,14.2,5.45,1.96,2.92,4.5,4.74,9.96,3.67,59.97-11.69,109.71.24,168.68,4.16,8.2.55,9.39-3.59,12.27-9.04.33-.62.53-1.66.41-2.39Z"
             style="fill: #004b94; stroke: #00206a; stroke-miterlimit: 10;" />
         </g>
-        <g id="Stol">
+        <g class="stol" id="Stol">
           <g>
             <path
               d="M271.91,572.23h-13.14c-4.05,0-7.36,3.27-7.37,7.28-2.52-3.2-15.22-5.64-30.53-5.64-17.12,0-30.99,3.05-30.99,6.8s13.88,6.8,30.99,6.8c15.31,0,28.01-2.44,30.53-5.64,0,4,3.32,7.28,7.37,7.28h13.14c4.05,0,7.37-3.28,7.37-7.28v-2.32c0-4.01-3.32-7.28-7.37-7.28Z"
@@ -176,10 +176,10 @@
                 style="fill: none; stroke: #bf8600; stroke-miterlimit: 10;" />
             </g>
           </g>
-          <path
+          <path id="left_glass"
             d="M426.68,258.73v36.01h.03c.24,6.21,4.64,11.34,10.49,12.69v36.31c-5.43.75-9.46,3.46-9.46,6.69h25.02c0-3.23-4.03-5.94-9.46-6.69v-36.31c5.85-1.35,10.25-6.48,10.49-12.69h.03v-36.01h-27.14Z"
             style="fill: #d4fffc; stroke: #3fc6ff; stroke-miterlimit: 10;" />
-          <path
+          <path id="right_glass"
             d="M657.14,258.1v36.01h.03c.24,6.21,4.64,11.34,10.49,12.69v36.31c-5.43.75-9.46,3.46-9.46,6.69h25.02c0-3.23-4.03-5.94-9.46-6.69v-36.31c5.85-1.35,10.25-6.48,10.49-12.69h.03v-36.01h-27.14Z"
             style="fill: #d4fffc; stroke: #3fc6ff; stroke-miterlimit: 10;" />
           <polygon
@@ -215,13 +215,15 @@
         </g>
       </svg>
     </section>
-    <section class="info-text">
-      <h2>Overskrift</h2>
+    <section class="info-text" id="info-text">
+      <h2>Information</h2>
       <article>
-        <p class="placeholder">INFO-TEKST</p>
+        <p class="placeholder">Velkommen til informations-siden. Her kan du klikke rundt på den interaktive
+          informationstegning og få lidt info om forskellige elementer til din næste fest eller selskab.</p>
       </article>
-      <aside id="efficiency" class="info-box">INFO-BOX</aside>
-      <aside id="requirement" class="info-box">INFO-BOX</aside>
+      <aside id="efficiency" class="info-box">Disse to farvede bokse vil komme med lidt forskellig information til
+        forskellige del-elementer.</aside>
+      <aside id="requirement" class="info-box">Så se at kom igang med at få dig noget information :D</aside>
     </section>
 
   </main>
@@ -250,6 +252,8 @@
   </footer>
   <script src="js/svg.js"></script>
   <script src="js/darkmode.js"></script>
+  <script src="js/burger.js"></script>
+
 </body>
 
 </html>

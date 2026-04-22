@@ -1,6 +1,9 @@
 {
   "github.copilot.enable": {
-    "*": false
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
   },
   "git.branchProtection": ["main", "master"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
