@@ -43,3 +43,19 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-card-bg-inverted);
 }
+.hide {
+  visibility: hidden;
+}
+.fadeIn {
+  animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    scale: 0.8;
+    translate: 0 1vw;
+  }
+  to {
+    opacity: 1;
+  }
+}
