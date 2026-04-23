@@ -132,39 +132,13 @@ html {
     color: var(--color-text);
   }
 
-  /* Animations */
-
-  /* #Skammel path,
-  #Skammel rect,
-  #Skammel polyline {
-    animation: skammel 2s ease-out both;
-    transform-box: fill-box;
-    transform-origin: center;
+  header #toggle-btn {
+    background-color: light-dark(#63bc94, #084027);
+    border: none;
   }
-  @keyframes skammel {
-    from {
-      transform: translate(0, 0);
-    }
-    to {
-      transform: translate(150px, 0);
-    }
+  header #toggle-btn:hover {
+    background-color: light-dark(#6ac89e, #0a4f30);
   }
-
-  #Pude_til_stol path,
-  #Stol path,
-  #Stol rect {
-    animation: stol 2s ease-out both;
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-  @keyframes stol {
-    from {
-      transform: translate(0, 0);
-    }
-    to {
-      transform: translate(50px, 0);
-    }
-  } */
 
   [popover] {
     padding: 1rem;
@@ -197,4 +171,7 @@ html {
 }
 html.dark {
   color-scheme: dark;
+  .news_dark {
+    filter: brightness(60%);
+  }
 }

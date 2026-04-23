@@ -70,6 +70,9 @@ footer ul {
   grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
   border-radius: 0%;
 }
+#frontpage .forside p {
+  margin-bottom: 1rem;
+}
 #frontpage .bred > * {
   grid-column: 2/3;
 }
@@ -92,7 +95,7 @@ footer ul {
 @keyframes effekt {
   from {
     scale: 0.8;
-    translate: 0 40vw;
+    translate: 0 30vw;
   }
 }
 .bred2 article:first-child {
@@ -103,7 +106,7 @@ footer ul {
 @keyframes venstre {
   from {
     scale: 0.8;
-    translate: 0 20vw;
+    translate: 0 10vw;
   }
 }
 .bred2 article:last-child {
@@ -114,7 +117,7 @@ footer ul {
 @keyframes højre {
   from {
     scale: 0.8;
-    translate: 0 80vw;
+    translate: 0 50vw;
   }
 }
 
