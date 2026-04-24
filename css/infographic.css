@@ -62,13 +62,13 @@
 /* Animations */
 
 #Skammel {
-  animation: skammel ease-out both 1s;
-    animation-delay: 0.1s;
+  animation: skammel 1.5s both;
+    animation-delay: 0.2s;
 
 }
 @keyframes skammel {
   from {
-    transform: translateX(200px);
+    transform: translateX(300px);
   }
   to {
     transform: translateX(0);
@@ -78,15 +78,14 @@
 #Pude_til_stol path,
 #Stol path,
 #Stol rect {
-  animation: stol 0.6s ease-out both;
+  animation: stol 1s both;
 }
 @keyframes stol {
   from {
-    transform: translateX(-200px);
+    transform: translateX(-300px);
   }
   to {
     transform: translateX(0);
   }
 }
-
 /* 
